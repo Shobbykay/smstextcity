@@ -36,10 +36,10 @@
                 <a class="nav-link_" href="sendsms.php">Send SMS</a>
               </li>
               <li class="">
-                <a class="nav-link_" href="#">Create SMS Group</a>
+                <a class="nav-link_" href="upload_bulknumbers.php">Create SMS Group</a>
               </li>
               <li class="">
-                <a class="nav-link_" href="#">Delivery Report</a>
+                <a class="nav-link_" href="delivery_report.php">Delivery Report</a>
               </li>
             </ul>
             </div>
@@ -56,13 +56,14 @@
         <strong><small>MENU</small></strong>
         <ul>
             <li><a href="#" class="active"><i class="la la-dashboard la-xl"></i>Dashboard</a></li>
-            <li><a href="#" class="smslog.php"><i class="la la-envelope la-xl"></i>SMS Logs</a></li>
+            <li><a href="smslog.php" class=""><i class="la la-envelope la-xl"></i>SMS Logs</a></li>
             <li><a href="#" class=""><i class="la la-user-secret la-xl"></i>Contact List</a></li>
-            <li><a href="#" class=""><i class="la la-briefcase la-xl"></i>Bulk Numbers</a></li>
-            <li><a href="#" class=""><i class="la la-arrow-up la-xl"></i>Upload Bulk Numbers</a></li>
+            <li><a href="bulk_numbers.php" class=""><i class="la la-briefcase la-xl"></i>Bulk Numbers</a></li>
+            <li><a href="upload_bulknumbers.php" class=""><i class="la la-arrow-up la-xl"></i>Upload Bulk Numbers</a></li>
+            <li><a href="drafts.php" class=""><i class="la la-pencil la-xl"></i>Drafts</a></li>
             <li><a href="#" class=""><i class="la la-sticky-note la-xl"></i>Instructions</a></li>
-            <li><a href="#" class=""><i class="la la-flag la-xl"></i>Delivery Report</a></li>
-            <li><a href="#" class=""><i class="la la-cog la-xl"></i>Settings</a></li>
+            <li><a href="delivery_report.php" class=""><i class="la la-flag la-xl"></i>Delivery Report</a></li>
+            <li><a href="settings.php" class=""><i class="la la-cog la-xl"></i>Settings</a></li>
         </ul>
     </div>
 

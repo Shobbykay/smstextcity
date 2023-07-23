@@ -1,19 +1,17 @@
 ﻿/*
 
-Jscript::PingManagement
+Jscript::SMSTEXTCITY
 
-Updated By: 21/09/2018
+Updated By: 23/07/2023
 Created By: Kayode Shobalaje
 
-Owned By: Ping-Express
+Owned By: SmsTextCity
 
 */
 
 $(function(){
     
     var modal_loader = '<div class="sm-loader">'+$(".showbox-bg .loader").html()+'</div><br>';
-
-    $('#tables').DataTable({});
     
     $(document).keyup(function(e) {
       if (e.keyCode === 13){}    // enter
@@ -33,6 +31,12 @@ $(function(){
     function loaderHide(){
         $(".showbox-bg").fadeOut("fast");
     }
+
+    //start from smstextcity
+    $('#datatables-log').dataTable();
+
+    // $('input[name="dates"]').daterangepicker();
+    //end from smstextcity
     
     //modal
     
@@ -83,8 +87,6 @@ $(function(){
         
         
     });
-    
-    $('#datatables-log').dataTable();
  
     
     $('body').on('click','button#chargeback', function(){

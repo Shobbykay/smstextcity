@@ -7,14 +7,13 @@
     <meta name="description" content="FundRealEstate">
     <meta name="keywords" content="FundRealEstate, FundRealEstate Management">
     <meta name="author" content="Kayode Shobalaje">
-    <title>SMS Logs</title>
+    <title>Add Single Contact</title>
 
     <link rel="apple-touch-icon" href="src/assets/img/smstextcity_logo.png">
     <link rel="shortcut icon" type="image/png" href="src/assets/img/smstextcity_logo.png"> 
 
     <!-- BEGIN VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="src/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="src/assets/css/jquery.dataTables.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="src/assets/css/vendors.min.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.css">-->
     <link rel="stylesheet" type="text/css" href="src/assets/css/balloon.css">
@@ -22,10 +21,6 @@
     
     <link rel="stylesheet" type="text/css" href="src/assets/fonts/css/line-awesome.min.css">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 </head>
 <body>
     <div class="header">
@@ -61,8 +56,8 @@
         <strong><small>MENU</small></strong>
         <ul>
             <li><a href="dashboard.php" class=""><i class="la la-dashboard la-xl"></i>Dashboard</a></li>
-            <li><a href="#" class="active"><i class="la la-envelope la-xl"></i>SMS Logs</a></li>
-            <li><a href="#" class=""><i class="la la-user-secret la-xl"></i>Contact List</a></li>
+            <li><a href="smslog.php" class=""><i class="la la-envelope la-xl"></i>SMS Logs</a></li>
+            <li><a href="#" class="active"><i class="la la-user-secret la-xl"></i>Contact List</a></li>
             <li><a href="bulk_numbers.php" class=""><i class="la la-briefcase la-xl"></i>Bulk Numbers</a></li>
             <li><a href="upload_bulknumbers.php" class=""><i class="la la-arrow-up la-xl"></i>Upload Bulk Numbers</a></li>
             <li><a href="drafts.php" class=""><i class="la la-pencil la-xl"></i>Drafts</a></li>
@@ -73,68 +68,43 @@
     </div>
 
     <div class="container">
-        <h1>SMS Logs</h1>
-        <small>History of all sent SMS</small>
+        <h1>Add New Contact</h1>
+        <small>Save a single contact address</small>
 
-        <div class="mt-2">
-            <div class="card">
-                <div class="card-body">
-                    <h5>Filter</h5>
-                    <div class="row mt-2 filter">
-                        <div class="col-md-3">
-                            <label for="">SMS Type</label>
-                            <select name="" id="" class="form-control-sm smdj">
-                                <option value="all">All</option>
-                                <option value="drafts">Drafts</option>
-                                <option value="sent">Sent</option>
-                            </select>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="">Phone Number</label>
+                                <input type="text" class="form-control smdj" placeholder="phone number">
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <label for="">Date Range</label>
-                            <input type="text" class="form-control-sm smdj" name="dates" placeholder="select date range">
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <label for="">Full Name (Optional)</label>
+                                <input type="text" class="form-control smdj" placeholder="first_name last_name (optional)">
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-info btn-rounded btn-sm mt-2">Search</button>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <label for="">Full Name (Optional)</label>
+                                <textarea class="form-control smdj" placeholder="first_name last_name (optional)"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <button class="btn btn-info btn-rounded" type="submit">Save Contact</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                
 
-            <div class="mt-2">
-                <table class="table table-striped table-hover" id="datatables-log">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Sender Name</th>
-                            <th>Message</th>
-                            <th>Pages</th>
-                            <th>Date Sent</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- <tr>
-                            <td colspan="6" align="center">No data available</td>
-                        </tr> -->
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>#</th>
-                            <th>Sender Name</th>
-                            <th>Message</th>
-                            <th>Pages</th>
-                            <th>Date Sent</th>
-                            <th>Action</th>
-                        </tr>
-                    </tfoot>
-                </table>
             </div>
         </div>
     </div>
 
-    <script src="src/assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="src/assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
-    <script src="src/assets/js/knotifier.js" type="text/javascript"></script>
-    <script src="src/assets/js/index.js" type="text/javascript"></script>
 </body>
 </html>

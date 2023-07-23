@@ -7,7 +7,7 @@
     <meta name="description" content="FundRealEstate">
     <meta name="keywords" content="FundRealEstate, FundRealEstate Management">
     <meta name="author" content="Kayode Shobalaje">
-    <title>Dashboard</title>
+    <title>Send SMS</title>
 
     <link rel="apple-touch-icon" href="src/assets/img/smstextcity_logo.png">
     <link rel="shortcut icon" type="image/png" href="src/assets/img/smstextcity_logo.png"> 
@@ -36,10 +36,10 @@
                 <a class="nav-link_ active" href="#">Send SMS</a>
               </li>
               <li class="">
-                <a class="nav-link_" href="#">Create SMS Group</a>
+                <a class="nav-link_" href="upload_bulknumbers.php">Create SMS Group</a>
               </li>
               <li class="">
-                <a class="nav-link_" href="#">Delivery Report</a>
+                <a class="nav-link_" href="delivery_report.php">Delivery Report</a>
               </li>
             </ul>
             </div>
@@ -58,11 +58,12 @@
             <li><a href="dashboard.php" class=""><i class="la la-dashboard la-xl"></i>Dashboard</a></li>
             <li><a href="smslog.php" class="active"><i class="la la-envelope la-xl"></i>SMS Logs</a></li>
             <li><a href="#" class=""><i class="la la-user-secret la-xl"></i>Contact List</a></li>
-            <li><a href="#" class=""><i class="la la-briefcase la-xl"></i>Bulk Numbers</a></li>
-            <li><a href="#" class=""><i class="la la-arrow-up la-xl"></i>Upload Bulk Numbers</a></li>
+            <li><a href="bulk_numbers.php" class=""><i class="la la-briefcase la-xl"></i>Bulk Numbers</a></li>
+            <li><a href="upload_bulknumbers.php" class=""><i class="la la-arrow-up la-xl"></i>Upload Bulk Numbers</a></li>
+            <li><a href="drafts.php" class=""><i class="la la-pencil la-xl"></i>Drafts</a></li>
             <li><a href="#" class=""><i class="la la-sticky-note la-xl"></i>Instructions</a></li>
-            <li><a href="#" class=""><i class="la la-flag la-xl"></i>Delivery Report</a></li>
-            <li><a href="#" class=""><i class="la la-cog la-xl"></i>Settings</a></li>
+            <li><a href="delivery_report.php" class=""><i class="la la-flag la-xl"></i>Delivery Report</a></li>
+            <li><a href="settings.php" class=""><i class="la la-cog la-xl"></i>Settings</a></li>
         </ul>
     </div>
 
@@ -76,7 +77,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between">
                             <div><h6 class="upper vgh">Contact List</h6></div>
-                            <div><a href="#" class="small-btn">Add Contact</a></div>
+                            <div><a href="addcontact.php" class="small-btn">Add Contact</a></div>
                         </div>
                         <input type="text" placeholder="Search Contact" class="form-control search mt-05">
                         <ul class="list-group list-group-flush">

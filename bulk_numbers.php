@@ -7,7 +7,7 @@
     <meta name="description" content="FundRealEstate">
     <meta name="keywords" content="FundRealEstate, FundRealEstate Management">
     <meta name="author" content="Kayode Shobalaje">
-    <title>SMS Logs</title>
+    <title>Bulk Numbers</title>
 
     <link rel="apple-touch-icon" href="src/assets/img/smstextcity_logo.png">
     <link rel="shortcut icon" type="image/png" href="src/assets/img/smstextcity_logo.png"> 
@@ -61,9 +61,9 @@
         <strong><small>MENU</small></strong>
         <ul>
             <li><a href="dashboard.php" class=""><i class="la la-dashboard la-xl"></i>Dashboard</a></li>
-            <li><a href="#" class="active"><i class="la la-envelope la-xl"></i>SMS Logs</a></li>
+            <li><a href="smslog.php" class=""><i class="la la-envelope la-xl"></i>SMS Logs</a></li>
             <li><a href="#" class=""><i class="la la-user-secret la-xl"></i>Contact List</a></li>
-            <li><a href="bulk_numbers.php" class=""><i class="la la-briefcase la-xl"></i>Bulk Numbers</a></li>
+            <li><a href="bulk_numbers.php" class="active"><i class="la la-briefcase la-xl"></i>Bulk Numbers</a></li>
             <li><a href="upload_bulknumbers.php" class=""><i class="la la-arrow-up la-xl"></i>Upload Bulk Numbers</a></li>
             <li><a href="drafts.php" class=""><i class="la la-pencil la-xl"></i>Drafts</a></li>
             <li><a href="#" class=""><i class="la la-sticky-note la-xl"></i>Instructions</a></li>
@@ -73,61 +73,50 @@
     </div>
 
     <div class="container">
-        <h1>SMS Logs</h1>
-        <small>History of all sent SMS</small>
+        <div class="d-flex justify-content-between">
+            <div>
+                <h1>Bulk Numbers</h1>
+                <small>List of group numbers</small>
+            </div>
+            <div>
+                <a href="upload_bulknumbers.php" class="btn btn-info btn-sm btn-rounded text-white">Upload bulk numbers</a>
+            </div>
+        </div>
 
         <div class="mt-2">
             <div class="card">
                 <div class="card-body">
-                    <h5>Filter</h5>
-                    <div class="row mt-2 filter">
-                        <div class="col-md-3">
-                            <label for="">SMS Type</label>
-                            <select name="" id="" class="form-control-sm smdj">
-                                <option value="all">All</option>
-                                <option value="drafts">Drafts</option>
-                                <option value="sent">Sent</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <label for="">Date Range</label>
-                            <input type="text" class="form-control-sm smdj" name="dates" placeholder="select date range">
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-info btn-rounded btn-sm mt-2">Search</button>
-                        </div>
+                    <div class="mt-2">
+                        <table class="table table-striped table-hover" id="datatables-log">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Group Name</th>
+                                    <th>Phone Numbers</th>
+                                    <th>Total</th>
+                                    <th>Date Added</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                    <td colspan="6" align="center">No data available</td>
+                                </tr> -->
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Group Name</th>
+                                    <th>Phone Numbers</th>
+                                    <th>Total</th>
+                                    <th>Date Added</th>
+                                    <th>Action</th>
+                                </tr>
+                            </tfoot>
+                        </table>
                     </div>
+                    <!-- end of card body -->
                 </div>
-            </div>
-
-            <div class="mt-2">
-                <table class="table table-striped table-hover" id="datatables-log">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Sender Name</th>
-                            <th>Message</th>
-                            <th>Pages</th>
-                            <th>Date Sent</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- <tr>
-                            <td colspan="6" align="center">No data available</td>
-                        </tr> -->
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>#</th>
-                            <th>Sender Name</th>
-                            <th>Message</th>
-                            <th>Pages</th>
-                            <th>Date Sent</th>
-                            <th>Action</th>
-                        </tr>
-                    </tfoot>
-                </table>
             </div>
         </div>
     </div>
