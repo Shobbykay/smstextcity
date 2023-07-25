@@ -1,0 +1,230 @@
+/*
+
+Created By: Kayode Shobalaje
+
+
+Date: 20/09/2023
+Updated: @now
+
+*/
+
+* {
+    font-size: 14.5px;
+}
+
+@font-face {
+    font-family: ping;
+    src: url(../fonts/Quicksand_Book.ttf);
+}
+
+@font-face {
+    font-family: pingRegular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: pingLight;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+*{
+    font-family: pingLight;
+/*    font-family: ping;*/
+    letter-spacing: 0px;
+/*    letter-spacing: -1.3px;*/
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.10rem;
+    color:#6B6F82;
+}
+
+body{
+    height: auto !important;
+}
+
+a{
+    color: #1E9FF2 !important;
+}
+
+img.logo_{
+    max-width: 20%;
+    position: relative;
+    z-index: 345;
+}
+
+.btn-rounded {
+    border-radius: 40px !important;
+}
+
+ul.navb{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul.navb li{
+    display: inline !important;
+}
+
+ul.navb li a{
+    display: inline-block;
+    padding:7px 15px;
+}
+
+ul.navb li a:hover, ul.navb li a.active{
+    background-color: rgba(30, 159, 242, .6);
+    color: #fff !important;
+    border-radius: 10px;
+    transition: all linear .4s;
+}
+
+img.avt_{
+    max-width: 40px;
+}
+
+.left-sidebar {
+    width: 270px;
+    background-color: #fff;
+    position: absolute;
+    transition: .2s ease-in;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    border-right: 1px solid #e5eaef;
+    padding-top: 6.5%;
+    padding-left: 25px;
+}
+
+.left-sidebar ul{
+    margin-top: 30px;
+}
+
+.left-sidebar ul li{
+    list-style: none;
+    margin-left: -65px !important;
+    margin-bottom: 10px;
+}
+
+.left-sidebar ul li a{
+    display: block;
+    padding: 15px 30px;
+    color: #333 !important;
+}
+
+.left-sidebar ul li a:hover, .left-sidebar ul li a.active{
+    background-color: #333 !important;
+    color: #fff !important;
+    margin: 0 20px;
+    border-radius: 17px;
+    transition: all linear .4s;
+}
+
+.la-xl{
+    font-size: 20px !important;
+    margin-right: 15px;
+}
+
+.mt-05{
+    margin-top: 5px;
+}
+
+.mt-1{
+    margin-top: 10px;
+}
+
+.mt-2{
+    margin-top: 20px;
+}
+
+.mt-3{
+    margin-top: 30px;
+}
+
+.mt-4{
+    margin-top: 40px;
+}
+
+.mt-5{
+    margin-top: 50px;
+}
+
+.upper{
+    text-transform: uppercase !important;
+}
+
+.vgh{
+    font-size: 12px;
+}
+
+.card{
+    --bs-card-box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    box-shadow: var(--bs-card-box-shadow) !important;
+}
+
+.small-btn{
+    background-color: #333;
+    color: #fff !important;
+    padding: 5px 10px;
+    display: block;
+    font-size: 13px;
+    border-radius: 20px;
+    margin-top: -7px;
+}
+
+input.search{
+    font-size: 14px !important;
+}
+
+.smdj{
+    font-size: 14px !important;
+    padding: 15px 13px !important;
+}
+
+textarea.smdj{
+    width: 100%;
+    resize: vertical;
+    height: 150px;
+}
+
+.d-block{
+    display: block !important;
+}
+
+/* .filter .smdj, .filter select.smdj{
+    padding: 8px 13px !important;
+} */
+
+.form-control-sm{
+    display: block !important;
+    width: 100% !important;
+    height: 40px !important;
+    font-size: 13px !important;
+    padding:5px 15px !important;
+}
+
+#datatables-log thead{
+    background-color: #9aa7b5 !important;
+    border: 0px !important;
+}
+
+#datatables-log thead th{
+    color: #fff !important
+}
+
+.alert-w{
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    padding:10px;
+}
+
+.boldtext {
+    font-weight: bold;
+}
+
+.text-error {
+    color: #b94a48;
+}
